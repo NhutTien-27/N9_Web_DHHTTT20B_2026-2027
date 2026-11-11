@@ -1,0 +1,152 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #f5f6f8;
+    font-family: Arial, sans-serif;
+    color: #071a35;
+}
+
+.detail-iphone {
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #00000012;
+}
+
+.product-img {
+    width: 100%;
+    max-width: 380px;
+    height: 380px;
+    object-fit: contain;
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.price {
+    margin: 12px 0;
+}
+
+.price span {
+    color: #d70018;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.price del {
+    margin-left: 10px;
+    color: #888;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 15px 0;
+}
+
+.quantity input {
+    width: 65px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-buy, .btn-sub {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #071a35;
+    border-radius: 6px;
+    font-weight: bold;
+    background: #071a35;
+    color: white;
+}
+
+.btn-sub {
+    background: white;
+    color: #071a35;
+}
+
+.btn-buy:hover, .btn-sub:hover {
+    background: #d4af37;
+    color: #071a35;
+}
+
+.promotion, .specifications {
+    margin-top: 20px;
+    padding: 18px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.promotion {
+    background: #fff8f0;
+    border-color: #ffdfc2;
+}
+
+.promotion h5, .specifications h4 {
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #d4af37;
+}
+
+.promotion ul {
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+
+.promotion li {
+    margin: 7px 0;
+}
+
+.specifications table {
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+.specifications th {
+    width: 25%;
+    background: #f1f3f5;
+}
+
+@media (max-width: 768px) {
+    .detail-iphone {
+        padding: 15px;
+    }
+
+    .product-img {
+        height: 280px;
+    }
+
+    h2 {
+        font-size: 21px;
+    }
+}
+
+
+.btn-back {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    background: white;
+    color: #071a35;
+    text-decoration: none;
+    font-size: 30px;
+    transition: 0.3s;
+}
+
+.btn-back:hover {
+    background: #071a35;
+    color: white;
+    transform: translateX(-4px);
+}

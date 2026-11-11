@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chỉnh sửa thông tin</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <div class="container mt-5">
+        <div class="card shadow p-4 mx-auto" style="max-width: 600px;">
+            <h3 class="mb-4 text-center">Chỉnh sửa thông tin cá nhân</h3>
+            
+            <form id="formEditProfile">
+                <div class="mb-3">
+                    <label class="form-label">Họ và Tên</label>
+                    <input type="text" class="form-control" id="editUsername" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Số điện thoại</label>
+                    <input type="text" class="form-control" id="editPhone" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Email (Không thể thay đổi)</label>
+                    <input type="email" class="form-control" id="editEmail" disabled>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Địa chỉ</label>
+                    <input type="text" class="form-control" id="editAddress">
+                </div>
+
+                <div class="d-flex justify-content-between">
+                    <a href="profile.html" class="btn btn-secondary">Hủy bỏ</a>
+                    <button type="submit" class="btn btn-success">Lưu thay đổi</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let currentUser = JSON.parse(localStorage.getItem("userLogin"));
+            if (!currentUser) {
+                alert("Vui lòng đăng nhập!");
+                window.location.href = "login.html";
+                return;
+            }
+
+            // Đổ dữ liệu cũ vào các ô input để người dùng sửa
+            document.getElementById("editUsername").value = currentUser.username || "";
+            document.getElementById("editPhone").value = currentUser.phone || "";
+            document.getElementById("editEmail").value = currentUser.email || "";
+            document.getElementById("editAddress").value = currentUser.address || "";
+
+            // Xử lý khi bấm nút "Lưu thay đổi"
+            document.getElementById("formEditProfile").addEventListener("submit", function (e) {
+                e.preventDefault();
+
+                // Cập nhật giá trị mới
+                currentUser.username = document.getElementById("editUsername").value;
+                currentUser.phone = document.getElementById("editPhone").value;
+                currentUser.address = document.getElementById("editAddress").value;
+
+                // Lưu lại vào session đang đăng nhập
+                localStorage.setItem("userLogin", JSON.stringify(currentUser));
+
+                // Đồng thời cập nhật lại trong mảng tổng `users`
+                let usersList = JSON.parse(localStorage.getItem("users")) || [];
+                const index = usersList.findIndex(u => u.email === currentUser.email);
+                if (index !== -1) {
+                    usersList[index] = currentUser;
+                    localStorage.setItem("users", JSON.stringify(usersList));
+                }
+
+                alert("Cập nhật thông tin thành công!");
+                // Chuyển hướng trở lại trang profile chính
+                window.location.href = "profile.html";
+            });
+        });
+    </script>
+</body>
+</html>

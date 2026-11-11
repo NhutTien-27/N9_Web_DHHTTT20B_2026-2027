@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chính sách đổi trả - Phone Store</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- Font Poppins giống các trang hiện tại -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- CSS riêng của trang đổi trả -->
+    <link rel="stylesheet" href="../css/returnPolicy.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <!-- HEADER: giữ cấu trúc và màu sắc theo Project_N11 -->
+    <header class="home-header row">
+        <div class="header-logo col-4 d-flex justify-content-center align-items-center">
+            <a href="../../Home/html/home.html">
+                <img src="../../Home/img/logo.png" alt="Phone Store" class="object-fit-contain">
+            </a>
+        </div>
+
+        <div class="header-center col-5 d-flex flex-column justify-content-between mt-3">
+            <div class="header-search">
+                <form action="" method="get" class="d-flex flex-row">
+                    <input type="text" id="search" name="q"
+                           placeholder="Tìm kiếm sản phẩm......" class="form-control">
+                    <button type="submit" class="btn btn-primary">Go</button>
+                </form>
+            </div>
+
+            <div class="header-menu">
+                <nav class="navbar">
+                    <ul class="d-flex flex-row gap-4 mb-0 list-unstyled align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../Home/html/home.html">Trang chủ</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button"
+                               data-bs-toggle="dropdown" aria-expanded="false">
+                                Sản phẩm
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../iPhoneProduct/html/iphone.html">iPhone</a></li>
+                                <li><a class="dropdown-item" href="../../MacBookProduct/html/MacBook.html">MacBook</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../Home/html/home.html">Giới thiệu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../Home/html/home.html">Liên hệ</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="header-right col-3 d-flex flex-column justify-content-between">
+            <div class="header-account d-flex align-items-center">
+                <img src="../../Home/img/account.png" alt="Tài khoản" class="me-2 object-fit-cover">
+                <span><a href="#">Tài khoản</a></span>
+            </div>
+
+            <div class="header-GioHang">
+                <img src="../../Home/img/GioHang.png" alt="Giỏ hàng" class="me-2 object-fit-cover">
+                <span><a href="#">Giỏ hàng</a></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- TIÊU ĐỀ TRANG -->
+    <section class="policy-banner">
+        <div class="container">
+            <h1>CHÍNH SÁCH ĐỔI TRẢ</h1>
+            <p>PHONE STORE luôn đặt quyền lợi và sự hài lòng của khách hàng lên hàng đầu</p>
+        </div>
+    </section>
+
+    <!-- NỘI DUNG CHÍNH SÁCH -->
+    <main class="container policy-container">
+        <div class="policy-intro">
+            <div class="intro-icon"><i class="fa-solid fa-shield-halved">✓</i></div>
+            <div>
+                <h2>Cam kết từ Phone Store</h2>
+                <p>
+                    Khách hàng vui lòng kiểm tra sản phẩm khi nhận hàng và giữ lại hóa đơn,
+                    hộp cùng phụ kiện để được hỗ trợ nhanh chóng khi phát sinh yêu cầu đổi trả.
+                </p>
+            </div>
+        </div>
+
+        <section class="policy-section">
+            <div class="section-heading">
+                <span>01</span>
+                <h2>Thời gian tiếp nhận đổi trả</h2>
+            </div>
+            <ul>
+                <li>Yêu cầu đổi trả được tiếp nhận trong vòng <strong>07 ngày</strong>
+                    kể từ ngày khách hàng nhận sản phẩm.</li>
+                <li>Đối với sản phẩm có lỗi kỹ thuật, Phone Store sẽ kiểm tra và hướng dẫn
+                    phương án xử lý phù hợp theo tình trạng thực tế và chính sách bảo hành.</li>
+                <li>Khách hàng nên liên hệ bộ phận hỗ trợ ngay khi phát hiện vấn đề để được
+                    hướng dẫn, tránh quá thời hạn tiếp nhận.</li>
+            </ul>
+        </section>
+
+        <section class="policy-section">
+            <div class="section-heading">
+                <span>02</span>
+                <h2>Điều kiện đổi trả</h2>
+            </div>
+            <p>Sản phẩm được xem xét đổi trả khi đáp ứng các điều kiện sau:</p>
+            <ul>
+                <li>Có hóa đơn mua hàng, mã đơn hàng hoặc thông tin xác nhận giao dịch.</li>
+                <li>Sản phẩm, số serial/IMEI và thông tin trên đơn hàng trùng khớp.</li>
+                <li>Còn hộp, phụ kiện, quà tặng và các giấy tờ đi kèm (nếu có).</li>
+                <li>Không có dấu hiệu hư hỏng do va đập, rơi vỡ, vào nước hoặc sử dụng sai hướng dẫn.</li>
+                <li>Lỗi kỹ thuật cần được bộ phận kỹ thuật hoặc đơn vị có thẩm quyền kiểm tra, xác nhận.</li>
+            </ul>
+        </section>
+
+        <section class="policy-section">
+            <div class="section-heading">
+                <span>03</span>
+                <h2>Các trường hợp không đủ điều kiện đổi trả</h2>
+            </div>
+            <ul>
+                <li>Sản phẩm hư hỏng do sử dụng không đúng hướng dẫn, bảo quản không phù hợp
+                    hoặc do tác động từ bên ngoài.</li>
+                <li>Sản phẩm đã bị tự ý tháo lắp, sửa chữa hoặc thay đổi cấu trúc.</li>
+                <li>Không cung cấp được thông tin mua hàng để xác minh giao dịch.</li>
+                <li>Thiếu phụ kiện, quà tặng hoặc bộ phận đi kèm mà không có thỏa thuận khác.</li>
+                <li>Yêu cầu được gửi sau thời hạn tiếp nhận, trừ trường hợp pháp luật hoặc
+                    chính sách bảo hành có quy định khác.</li>
+            </ul>
+        </section>
+
+        <section class="policy-section">
+            <div class="section-heading">
+                <span>04</span>
+                <h2>Quy trình đổi trả</h2>
+            </div>
+            <div class="process-list">
+                <div class="process-item">
+                    <span>1</span>
+                    <div><h3>Gửi yêu cầu</h3><p>Liên hệ Phone Store qua hotline hoặc email, cung cấp mã đơn hàng và mô tả tình trạng sản phẩm.</p></div>
+                </div>
+                <div class="process-item">
+                    <span>2</span>
+                    <div><h3>Tiếp nhận và kiểm tra</h3><p>Nhân viên hướng dẫn gửi sản phẩm đến cửa hàng/địa điểm tiếp nhận để kiểm tra.</p></div>
+                </div>
+                <div class="process-item">
+                    <span>3</span>
+                    <div><h3>Thông báo kết quả</h3><p>Phone Store thông báo tình trạng kiểm tra và phương án xử lý cho khách hàng.</p></div>
+                </div>
+                <div class="process-item">
+                    <span>4</span>
+                    <div><h3>Đổi sản phẩm hoặc hoàn tiền</h3><p>Thực hiện đổi sản phẩm hoặc hoàn tiền nếu yêu cầu đáp ứng điều kiện áp dụng.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="policy-section">
+            <div class="section-heading">
+                <span>05</span>
+                <h2>Chính sách hoàn tiền</h2>
+            </div>
+            <ul>
+                <li>Hoàn tiền được thực hiện sau khi yêu cầu được xác nhận đủ điều kiện.</li>
+                <li>Ưu tiên hoàn tiền qua phương thức thanh toán ban đầu; trường hợp không thể
+                    thực hiện, nhân viên sẽ trao đổi phương án phù hợp với khách hàng.</li>
+                <li>Thời gian xử lý dự kiến từ <strong>03–07 ngày làm việc</strong> kể từ khi
+                    yêu cầu hoàn tiền được chấp thuận; thời gian ngân hàng/đơn vị thanh toán
+                    ghi nhận có thể khác nhau.</li>
+                <li>Chi phí vận chuyển và các khoản phí liên quan (nếu có) được thông báo
+                    rõ trước khi xử lý.</li>
+            </ul>
+        </section>
+
+        <section class="policy-section">
+            <div class="section-heading">
+                <span>06</span>
+                <h2>Chi phí vận chuyển đổi trả</h2>
+            </div>
+            <ul>
+                <li>Trường hợp sản phẩm được xác nhận lỗi từ nhà sản xuất hoặc giao sai sản phẩm,
+                    Phone Store hỗ trợ chi phí vận chuyển đổi trả theo hướng dẫn của nhân viên.</li>
+                <li>Trường hợp đổi trả theo nhu cầu cá nhân hoặc không xuất phát từ lỗi của cửa hàng,
+                    khách hàng có thể cần thanh toán chi phí vận chuyển.</li>
+            </ul>
+        </section>
+
+        <section class="contact-policy">
+            <div class="contact-content">
+                <h2>CẦN HỖ TRỢ ĐỔI TRẢ?</h2>
+                <p>Liên hệ với Phone Store để được hướng dẫn chi tiết.</p>
+                <div class="contact-info">
+                    <p><strong>Hotline:</strong> 0363 292 840</p>
+                    <p><strong>Email:</strong> phonestore.support@gmail.com</p>
+                    <p><strong>Thời gian hỗ trợ:</strong> 08:00 – 21:00 (Thứ 2 – Chủ nhật)</p>
+                </div>
+            </div>
+            <a href="mailto:phonestore.support@gmail.com" class="contact-button">LIÊN HỆ NGAY</a>
+        </section>
+
+        <p class="policy-note">
+            Lưu ý: Các mốc thời gian và điều kiện trên là nội dung mẫu của đồ án website.
+            Khi đưa vào kinh doanh thực tế, Phone Store cần rà soát và công bố chính sách
+            chính thức phù hợp với quy định pháp luật và chính sách bảo hành của nhà cung cấp.
+        </p>
+    </main>
+
+    <!-- FOOTER: cùng phong cách các trang hiện tại -->
+    <footer class="home-footer row">
+        <div class="home-footer-1 col-3 ms-1">
+            <h6>Tổng đài hỗ trợ miễn phí</h6>
+            <p>Mua hàng - bảo hành tại 0363292840</p>
+            <p>Khiếu nại tại 0363292840</p>
+            <p>Phương thức thanh toán</p>
+            <div class="ThanhToan d-flex flex-row justify-content-start align-items-center">
+                <img src="../../Home/img/momo.png" alt="Momo">
+                <img src="../../Home/img/vnpay.png" alt="VNPay">
+                <img src="../../Home/img/zalopay.png" alt="ZaloPay">
+            </div>
+        </div>
+
+        <div class="footer-2 col-3">
+            <h6>Thông tin về chính sách</h6>
+            <p><a href="#">Mua hàng và thanh toán online</a></p>
+            <p><a href="#">Mua hàng trả góp</a></p>
+            <p><a href="#">Chính sách giao hàng</a></p>
+            <p><a href="returnPolicy.html">Chính sách đổi trả</a></p>
+        </div>
+
+        <div class="footer-3 col-3">
+            <h6>Dịch vụ và thông tin khác</h6>
+            <p><a href="#">Khách hàng doanh nghiệp</a></p>
+            <p><a href="#">Ưu đãi thanh toán</a></p>
+            <p><a href="#">Quy chế hoạt động</a></p>
+            <p><a href="#">Chính sách bảo mật thông tin cá nhân</a></p>
+            <p><a href="#">Chính sách bảo hành</a></p>
+        </div>
+
+        <div class="footer-4 col-2">
+            <h6>Theo dõi chúng tôi</h6>
+            <div class="ThanhToan d-flex flex-row justify-content-start align-items-center">
+                <img src="../../Home/img/youtube.png" alt="Youtube">
+                <img src="../../Home/img/facebook.png" alt="Facebook">
+                <img src="../../Home/img/tiktok.png" alt="TikTok">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

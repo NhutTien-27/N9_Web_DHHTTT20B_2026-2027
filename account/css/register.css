@@ -1,0 +1,82 @@
+
+body {
+    background-color: #f4f6f9;
+    font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+}
+
+#formRegister {
+    max-width: 520px;
+    width: 100%;
+    background: #ffffff;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    padding: 40px 35px;
+}
+
+#formRegister h3 {
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 8px;
+}
+
+.form-label {
+    font-weight: 600;
+    color: #495057;
+    margin-bottom: 6px;
+}
+
+.form-control {
+    border-radius: 8px;
+    padding: 10px 14px;
+    border: 1px solid #ced4da;
+    transition: all 0.2s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.15);
+}
+
+/* THÔNG BÁO LỖI */
+.error-message {
+    display: none;
+    color: #dc3545;
+    font-size: 0.85rem;
+    margin-top: 4px;
+    font-weight: 500;
+}
+
+/* VIỀN KHI NHẬP SAI */
+.input-error {
+    border: 1px solid red !important;
+}
+
+/* VIỀN KHI NHẬP ĐÚNG */
+.input-success {
+    border: 1px solid green !important;
+}
+
+/* NÚT ĐĂNG KÝ */
+.btn-primary {
+    background-color: #0d6efd;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    font-weight: 600;
+    font-size: 1rem;
+    width: 100%;
+    margin-top: 15px;
+    transition: background-color 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7;
+}

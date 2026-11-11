@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Store - Chính sách bảo hành</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Nhúng CSS gốc của dự án (đi ngược ra thư mục chung để nhúng CSS chuẩn) -->
+    <link rel="stylesheet" href="../../DetailProduct/css/iPhone16proDetail.css">
+    
+    <!-- CSS riêng cho trang bảo hành -->
+    <link rel="stylesheet" href="../css/warranty.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-----------------------------------header start----------------------------------------------->
+    <!-----------------------------------header start----------------------------------------------->
+    <header class = "home-header row ">
+
+        <!------------logo-------------->
+        <div class = "header-logo col-4 d-flex justify-content-center align-items-center ">
+            <img src = "../img/logo.png" alt = "logo" class = "object-fit-container ">
+        </div>
+
+        <!--------------------Thanh tìm kiếm và menu------------------>
+        <div class = "header-center col-5 d-flex flex-column justify-content-between  mt-3 ">
+
+            <!--------thanh tìm kiếm----------->
+            <div class = "header-search">
+                <form action = "" method = "get" class = "d-flex flex-row" >
+                    <input type = "text" id = "search" placeholder = "Tìm kiếm sản phẩm......" class = "form-control">
+                    <button type = "submit" class = "btn btn-primary">Go</button>
+                </form>
+            </div>
+            <!------------------------menu------------------>
+            <div class="header-menu">
+                <nav class="navbar">
+                <ul class="d-flex flex-row gap-5 mb-0 list-unstyled align-items-center">
+
+                    <li class="nav-item"><a class="nav-link" href="../../Home/html/home.html">Trang chủ</a></li>
+                    <!--dùng dropdown trong bootstrap để tạo lựa chọn-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle"
+                                    href="#"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                            Sản phẩm
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../../iPhoneProduct/html/iphone.html">iPhone</a></li>
+                            <li><a class="dropdown-item" href="../../MacBookProduct/html/MacBook.html"> MacBook</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="../../about/html/about.html">Giới thiệu</a></li><!--chưa liên kết với trang about-->
+                    <li class="nav-item"><a class="nav-link" href="../../Contact/html/contact.html">Liên hệ</a></li><!--chưa liên kết với trang contact-->
+                </ul>
+                </nav>
+            </div>
+
+        </div>
+        <!-------------------account và giỏ hàng------------------------->
+        <div class = "header-right col-3 d-flex flex-column justify-content-between  ">
+
+            <div class = "header-account d-flex  align-items-center">
+                <img src = "../img/account.png" alt = "account" href = "../../account/html/login.html" class = "me-2 object-fit-cover" >
+                <span><a href = "../../account/html/login.html">Tài khoản</a></span>
+            </div>
+
+            <div class = "header-GioHang">
+                <img src = "../img/GioHang.png" alt = "cart" href="../../GioHang/html/index.html" class = "me-2 object-fit-cover">
+                <span><a href = "../../GioHang/html/index.html">Giỏ hàng</a></span>
+            </div>
+        </div>
+    </header>
+<!-----------------------------------header end------------------------------------------------>
+<!-----------------------------------header end------------------------------------------------>
+
+
+
+    <!------------------------------------main start------------------------------------------------->
+    <main class="main-warranty container my-5">
+        <h2 class="text-center fw-bold mb-4">CHÍNH SÁCH BẢO HÀNH CỦA PHONE STORE</h2>
+
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm border-0 p-3">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary fw-bold">1. Thời gian bảo hành</h5>
+                        <p class="card-text">Các sản phẩm iPhone & MacBook chính hãng bán ra tại Phone Store đều được hưởng chính sách bảo hành tiêu chuẩn:</p>
+                        <ul>
+                            <li><strong>iPhone / MacBook mới:</strong> Bảo hành 12 tháng chính hãng Apple.</li>
+                            <li><strong>Đổi trả:</strong> 1 đổi 1 trong vòng 30 ngày đầu tiên nếu có lỗi từ nhà sản xuất.</li>
+                            <li><strong>Phụ kiện đi kèm:</strong> Bảo hành 6 tháng (sạc, cáp).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm border-0 p-3">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary fw-bold">2. Điều kiện được bảo hành</h5>
+                        <p class="card-text">Sản phẩm đủ điều kiện tiếp nhận bảo hành khi đáp ứng các tiêu chuẩn sau:</p>
+                        <ul>
+                            <li>Sản phẩm còn trong thời hạn bảo hành.</li>
+                            <li>Số IMEI / Serial Number trên thiết bị trùng khớp với dữ liệu bán hàng.</li>
+                            <li>Lỗi phát sinh do linh kiện hoặc kỹ thuật từ phía nhà sản xuất.</li>
+                            <li>Máy chưa bị can thiệp phần cứng bởi bên thứ ba.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm border-0 p-3">
+                    <div class="card-body">
+                        <h5 class="card-title text-danger fw-bold">3. Từ chối bảo hành</h5>
+                        <p class="card-text">Các trường hợp sau sẽ không được áp dụng chính sách bảo hành miễn phí:</p>
+                        <ul>
+                            <li>Sản phẩm bị rơi vỡ, va đập, trầy xước nặng hoặc biến dạng.</li>
+                            <li>Thiết bị bị ngấm nước, chất lỏng hoặc tiếp xúc môi trường ẩm ướt.</li>
+                            <li>Tự ý tháo dỡ, sửa chữa tại các trung tâm không thuộc ủy quyền.</li>
+                            <li>Sản phẩm bị khóa tài khoản cá nhân (iCloud, Apple ID).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm border-0 p-3">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary fw-bold">4. Quy trình bảo hành</h5>
+                        <ol>
+                            <li><strong>Bước 1:</strong> Mang sản phẩm và hóa đơn mua hàng đến cửa hàng Phone Store.</li>
+                            <li><strong>Bước 2:</strong> Bộ phận kỹ thuật tiếp nhận và kiểm tra sơ bộ tình trạng máy.</li>
+                            <li><strong>Bước 3:</strong> Chuyển thiết bị về Trung tâm bảo hành ủy quyền của Apple (AASP).</li>
+                            <li><strong>Bước 4:</strong> Bàn giao lại thiết bị đã sửa chữa/đổi mới cho khách hàng.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!------------------------------------main end--------------------------------------------------->
+
+    
+</body>
+</html>

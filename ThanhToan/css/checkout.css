@@ -1,0 +1,113 @@
+
+body {
+    background-color: #f5f6f8;
+    color: #071a35;
+    font-family: Arial, sans-serif;
+}
+
+.page-title,
+.section-title {
+    color: #071a35;
+}
+
+.page-title {
+    border-bottom: 3px solid #d4af37;
+    padding-bottom: 15px;
+}
+
+.form-label {
+    font-weight: 600;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #d4af37;
+    box-shadow: 0 0 0 0.2rem #d4af3730;
+}
+
+.payment-option {
+    border: 1px solid #dee2e6;
+    background: #f8f9fa;
+}
+
+.payment-option:has(input:checked) {
+    border-color: #d4af37;
+    background: #fffdf5;
+}
+
+.form-check-input:checked {
+    background-color: #071a35;
+    border-color: #071a35;
+}
+
+.total-price {
+    color: #071a35;
+    font-size: 18px;
+}
+
+.total-price strong {
+    color: #c62828;
+}
+
+.btn-checkout {
+    background-color: #071a35;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+.btn-checkout:hover {
+    background-color: #d4af37;
+    color: #071a35;
+}
+
+.order-item {
+    border-bottom: 1px solid #eee;
+    padding: 12px 0;
+}
+
+.order-item img {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+}
+
+.order-item h6 {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.order-item small {
+    color: #777;
+}
+
+/* NÚT QUAY LẠI */
+.back-arrow {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.back-arrow:hover {
+    color: #0d6efd;
+    transform: translateX(-5px);
+}
+
+/* THÔNG BÁO LỖI */
+.error-message {
+    color: red;
+    font-size: 13px;
+    display: block;
+    margin-top: 5px;
+}
+
+.input-error {
+    border: 1px solid red !important;
+}
+
+.input-success {
+    border: 1px solid green !important;
+}
